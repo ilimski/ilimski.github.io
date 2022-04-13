@@ -5,10 +5,12 @@
 
 Project was made with Python/Django, Heroku, Postgresql
 
-admin login: admin
+heroku https://ilim-backend.herokuapp.com/
+admin page https://ilim-backend.herokuapp.com/admin
 
+admin login: admin
 admin password: admin
 
-![alt text](screenshots/1.png)
-![alt text](screenshots/2.png)
-![alt text](screenshots/3.png)
+![alt text](sc/1.png)
+![alt text](sc/2.png)
+![alt text](sc/3.png)
