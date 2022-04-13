@@ -6,10 +6,6 @@ To launch project:
 3. install requirements.txt
 4. launch it
 
-link to heroku https://backendmidterm2022.herokuapp.com
-
-link to admin page https://backendmidterm2022.herokuapp.com/admin
-
 admin login: admin
 
 admin password: admin
