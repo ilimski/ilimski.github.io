@@ -8,7 +8,7 @@ SECRET_KEY = 'django-insecure-nk@f+cw$2vpdzb87^i8fa+a4ttif+c(aj7n1yxuza%2v^o(*1z
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -50,10 +50,20 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'ilim_backend.wsgi.application'
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd4qmsviok5l8ii',
+        'USER': 'zycibppzlyiial',
+        'PASSWORD': '3ff25fd7e1d672b903f6461e62d5c97ecf9b784597a00c5aca3f0af1eadf8feb',
+        'HOST': 'ec2-18-215-96-22.compute-1.amazonaws.com',
+        'PORT': '5432'
     }
 }
 
@@ -82,9 +92,10 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
-# STATICFILES_DIRS = (
-#     os.path.join(BASE_DIR, 'staticfiles'),
-# )
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
 django_heroku.settings(locals())
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')

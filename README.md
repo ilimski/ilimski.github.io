@@ -1,10 +1,9 @@
-Project was implemented using Python/Django, Heroku, Postgresql. Database has one table with items.
-
-To launch project:
-1. Pull master repo
-2. create virtual environment with package you have
+1. Pull main repo
+2. create virtual environment 
 3. install requirements.txt
-4. launch it
+4. run it
+
+Project was made with Python/Django, Heroku, Postgresql
 
 admin login: admin
 

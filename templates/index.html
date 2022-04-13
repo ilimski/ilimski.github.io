@@ -11,22 +11,28 @@
 </head>
 <body>
 <div class="logo">
-    <img src="{% static 'logo.png' %}" class="logo">
+    <img src="{% static 'logo.png' %}">
 </div>
 <h1 class="header">Ilim Zhenishbekov COM20-B</h1>
-
+<br/>
 
 {% for i in facs %}
-    <div class="item" style="margin-bottom: 10px;">
+    <div class="container">
+    <div class="item" style=" margin-bottom: 10px;">
         <h4 class="title">
             {{ i.name }}
-        </h4>        <div class="text">
-
+        </h4>
+        <div class="text">
             {{ i.desc }}
         </div>
-        <div class="date">
-            {{ i.fee }}
+        <br>
+        <div class="fee">
+            One semester costs: {{ i.fee }}$
         </div>
+        <div class="ort_needed">
+            You need at least: {{ i.ort_needed }}
+        </div>
+    </div>
     </div>
 {% endfor %}
 </body>
